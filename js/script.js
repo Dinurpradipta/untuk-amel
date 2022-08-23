@@ -6,7 +6,7 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-  doi = "Diana";
+  doi = "Amalia Khairunnisa";
 }
 
 let footer = document.getElementById("credit");
@@ -59,7 +59,7 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-    title: 'Halo Diana!',
+    title: 'Halo Amalia Khairunnisa!',
     html: `Selamat Pagi, Kamu udah Sarapan?`,
     timer: 2500,
     timerProgressBar: true,
@@ -77,20 +77,20 @@ document.querySelector(".tombol").addEventListener('click', function () {
           if (result.dismiss === Swal.DismissReason.timer) {
             Swal.fire({
               title: ' ',
-              html: `Lagi pusing banget, cape banget`,
+              html: `Lagi pusing banget Karena Kerjaan, cape banget Juga malah`,
               timer: 2000,
               timerProgressBar: true,
               showConfirmButton: false,
             }).then((result) => {
               if (result.dismiss === Swal.DismissReason.timer) {
-                Swal.fire('Semangat terus ya kamu :)').then((result) => {
+                Swal.fire('Semangat terus ya Mel :)').then((result) => {
                   Swal.fire(
                     'Jangan keseringan begadang!',
                     '',
                     'error'
                   ).then((result) => {
                     Swal.fire(
-                      'Jangan telat makan!',
+                      'Jangan Sampai telat makan!',
                       '',
                       'error'
                     ).then((result) => {
@@ -99,7 +99,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                           title: 'Oh iya aku mau nanya',
                           text: 'Ada sesuatu yang lagi kamu pingin ga?',
                           showDenyButton: true,
-                          confirmButtonText: `Ada sih ka`,
+                          confirmButtonText: `Ada sih Nur`,
                           denyButtonText: `Ga ada ko`,
                         }).then((result) => {
                           /* Read more about isConfirmed, isDenied below */
@@ -115,15 +115,15 @@ document.querySelector(".tombol").addEventListener('click', function () {
                                 }
                               }
                             }).then((result) => {
-                              Swal.fire('Okey Diana', 'Nanti aku kabulin kemauan kamu yaa', 'success').then((result) => {
-                                Swal.fire("See ya! Aku kangen ^^").then((result) => {
+                              Swal.fire('Okey Mel', 'Nanti aku kabulin kemauan kamu yaa', 'success').then((result) => {
+                                Swal.fire("Terimakasih Mel hehe :)").then((result) => {
                                   selesai()
                                 });
                               })
                             })
                           } else if (result.isDenied) {
                             Swal.fire('Oh okedeh kalo ga ada').then((result) => {
-                              Swal.fire("See ya! Aku kangen ^^").then((result) => {
+                              Swal.fire("Terimakasih Mel hehe :)").then((result) => {
                                 selesai()
                               });
                             })
